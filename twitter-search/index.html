@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>chronotope’s Twitter Archive</title>
+		<meta name="description" content="A read-only indieweb self-hosted archive of chronotope’s tweets." />
+		<script type="application/ld+json">
+    {"@context":"http://schema.org","creator":{"@type":"Person","name":{"@type":"PronounceableText","textValue":"Aram Zucker-Scharff","inLanguage":"en-US","speechToTextMarkup":"IPA","phoneticText":"/ˌæ.ɹəm ˈt͡sʊ.kɚ 'ʃɑɹf/"},"sameAs":"http://aramzs.github.io/aramzs/","image":{"@type":"ImageObject","url":"https://aramzs.github.io/tweets/img/twitter-avy.jpg"},"description":"Aram Zucker-Scharff is Lead Privacy Engineer at The Washington Post, lead dev for PressForward and a consultant. Tech solutions for journo problems."},"inLanguage":"en-US","about":["chronotope",null,"Twitter"],"@type":["ArchiveOrganization","WebSite"],"archiveHeld":"/twitter-search/","url":"/twitter-search/","name":"chronotope’s Twitter Archive","@id":"/twitter-search/"}
+</script>
+
+		<script>
+		if("classList" in document.documentElement) {
+			document.documentElement.classList.add("has-js");
+		}
+		</script>
+
+		
+			<link rel="stylesheet" href="/assets/chartist.min.css">
+			<link rel="stylesheet" href="/assets/chart.css">
+			<script src="/assets/chartist.min.js"></script>
+			<script src="/assets/chart.js"></script>
+		
+
+		<link rel="stylesheet" href="/assets/style.css">
+		<script src="/assets/script.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<h1 class="tweets-title"><a href="/"><img src="https://aramzs.github.io/tweets/img/twitter-avy.jpg" width="52" height="52" alt="chronotope’s avatar" class="tweet-avatar">chronotope’s Twitter Archive</a></h1>
+			
+			
+		</header>
+		<main>
+			<div>
+				<h1>Search Tweet Text</h1>
+				<p>This form will you to search the text of the tweets.</p>
+				<form class="js" method="get" id="search-text">
+					<script src="../assets/elasticlunr.min.js" defer></script>
+					<script src="../assets/search-setup.js" defer></script>
+					<h2>Search <label for="tweet-text">in text</label>:</h2>
+					<div class="tweets-search">
+						<div class="lo" style="--lo-margin-h: 1em; align-items: center;">
+							<div class="lo-c" style="flex-grow: 100">
+								<input type="text" id="tweet-text" required placeholder="Search Tweets" style="width: 100%">
+							</div>
+							<div class="lo-c" style="flex-grow: .001;">
+								<button type="submit" disabled id="search-submit-button">Search</button>
+							</div>
+						</div>
+					</div>
+				</form>	
+				<div>
+				<ol id="searchbox" class="tweets tweets-linear-list h-feed hfeed"></ul>
+				</div>
+				</div>
+		</div>
+		</main>
+		<footer>
+			<p>An open source project from <a href="https://github.com/tweetback">tweetback</a>.</p>
+		</footer>
+	</body>
+</html>
