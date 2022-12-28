@@ -5,9 +5,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Chronotope’s Twitter Archive</title>
 		<meta name="description" content="A read-only indieweb self-hosted archive of Chronotope’s tweets." />
-		<script type="application/ld+json">
-    {"@context":"http://schema.org","creator":{"@type":"Person","name":{"@type":"PronounceableText","textValue":"Aram Zucker-Scharff","inLanguage":"en-US","speechToTextMarkup":"IPA","phoneticText":"/ˌæ.ɹəm ˈt͡sʊ.kɚ 'ʃɑɹf/"},"sameAs":"http://aramzs.github.io/aramzs/","image":{"@type":"ImageObject","url":"https://tweets.aramzs.com/img/twitter-avy.jpg"},"description":"Aram Zucker-Scharff is Lead Privacy Engineer at The Washington Post, lead dev for PressForward and a consultant. Tech solutions for journo problems."},"inLanguage":"en-US","about":["Chronotope",null,"Twitter"],"@type":["ArchiveOrganization","WebSite"],"archiveHeld":"/twitter-search/","url":"/twitter-search/","name":"Chronotope’s Twitter Archive","@id":"/twitter-search/"}
+		<!-- [] -->
+<script type="application/ld+json">
+   	{
+ "@context": "http://schema.org",
+ "creator": {
+  "@type": "Person",
+  "name": {
+   "@type": "PronounceableText",
+   "textValue": "Aram Zucker-Scharff",
+   "inLanguage": "en-US",
+   "speechToTextMarkup": "IPA",
+   "phoneticText": "/ˌæ.ɹəm ˈt͡sʊ.kɚ 'ʃɑɹf/"
+  },
+  "sameAs": "http://aramzs.github.io/aramzs/",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://tweets.aramzs.com/img/twitter-avy.jpg"
+  },
+  "description": "Aram Zucker-Scharff is Lead Privacy Engineer at The Washington Post, lead dev for PressForward and a consultant. Tech solutions for journo problems."
+ },
+ "inLanguage": "en-US",
+ "about": [
+  "Chronotope",
+  "Aram Zucker-Scharff",
+  "Twitter"
+ ],
+ "@type": [
+  "ArchiveOrganization",
+  "WebSite"
+ ],
+ "archiveHeld": "/twitter-search/",
+ "url": "https://tweets.aramzs.com/twitter-search/",
+ "name": "Chronotope’s Twitter Archive",
+ "@id": "/twitter-search/"
+}
 </script>
+
+	<meta property="og:url" content="https://tweets.aramzs.com/twitter-search/" />
+		
+	<meta name="author" content="Chronotope" />
+		
+	<meta property="og:title" content="Chronotope’s Twitter Archive" />
+		
+	<meta property="og:description" content="A read-only indieweb self-hosted archive of Chronotope’s tweets." />
+		
+	<meta property="og:site_name" content="Chronotope’s Twitter Archive" />
+		
+	<meta property="og:locale" content="en-US" />
+		
+	<meta name="twitter:site" content="Chronotope" />
+		
+	<meta name="twitter:description" content="A read-only indieweb self-hosted archive of Chronotope’s tweets." />
+		
+	<meta name="twitter:creator" content="Chronotope" />
+		
+	<meta name="twitter:title" content="Chronotope’s Twitter Archive" />
+		
 
 		<script>
 		if("classList" in document.documentElement) {
@@ -44,7 +98,7 @@
 					<div class="tweets-search">
 						<div class="lo" style="--lo-margin-h: 1em; align-items: center;">
 							<div class="lo-c" style="flex-grow: 100">
-								<input type="text" id="tweet-text" required placeholder="Search Tweets" style="width: 100%">
+								<input type="text" id="tweet-text" required placeholder="Loading Tweets..." style="width: 100%" />
 							</div>
 							<div class="lo-c" style="flex-grow: .001;">
 								<button type="submit" disabled id="search-submit-button">Search</button>
@@ -57,6 +111,9 @@
 				</div>
 				</div>
 		</div>
+			<br />
+			<hr /> 
+			<a href="/twitter-search"><h2>Search tweets' text</h2></a>
 		</main>
 		<footer>
 			<p>An open source project from <a href="https://github.com/tweetback">tweetback</a>.</p>
